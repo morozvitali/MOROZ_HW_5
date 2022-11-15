@@ -1,18 +1,15 @@
 package HW5.Running;
 
     abstract class Member{
-
-        double runLenght;
-        double jumpHight;
-
+        String name;
+        private double runLenght;
+        private double jumpHight;
         public double getRunLenght() {
             return runLenght;
         }
-
         public double getJumpHight() {
             return  jumpHight;
         }
-
-        void run() {System.out.println("i'm member and i'm  run");}
-    void jump() { System.out.println("i'm member and i'm  jump");}
+        void run() {System.out.print("i'm "+ this.name + " and i run over ");}
+        void jump() { System.out.print("i'm "+ this.name + " and i jump over ");}
 }

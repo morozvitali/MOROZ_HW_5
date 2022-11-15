@@ -1,13 +1,15 @@
 package HW5.Running;
 
 public class Cat extends Member {
-
+    public static int nameQuantity;
     public double runLenght;
     public double jumpHight;
 
     public Cat() {
-        this.runLenght = Math.random()*2;
-        this.jumpHight = Math.random()*10;
+        this.name = "Cat" + nameQuantity++;
+        this.runLenght = Math.random() * 2;
+        this.jumpHight = Math.random() * 10;
+
     }
 
     @Override
@@ -19,14 +21,5 @@ public class Cat extends Member {
     public double getJumpHight() {
         return jumpHight;
     }
-
-    @Override
-    public void run() {
-        System.out.println("i'm Cat and i run " + runLenght + " km");
-    }
-
-    @Override
-    public void jump() {
-        System.out.println("i'm Cat and i jump " + jumpHight + " m");
-    }
 }
+
