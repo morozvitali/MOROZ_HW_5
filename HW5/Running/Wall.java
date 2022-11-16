@@ -25,6 +25,9 @@ public class Wall extends Obstacle {
             System.out.print(this.nameObstacle + " and I lost and I'm out of the competition!");
             System.out.println("Jump posibility:[ " + Math.round(member.getJumpHight()) + "m ] Wall hight:[ " + Math.round(obstacleHight) + "m ]");
             return false;
+
+            ? (a+b) :
+
         }
     }
 }

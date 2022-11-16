@@ -1,15 +1,13 @@
 package HW5.Running;
 
     abstract class Member{
-        String name;
-        private double runLenght;
-        private double jumpHight;
-        public double getRunLenght() {
-            return runLenght;
-        }
-        public double getJumpHight() {
-            return  jumpHight;
-        }
-        void run() {System.out.print("i'm "+ this.name + " and i run over ");}
-        void jump() { System.out.print("i'm "+ this.name + " and i jump over ");}
+// якщо не буде доступа к макс длине то треба зробити геттери (в батьківському класі стоїть протектед!
+        protected double maxLenght;
+        protected double maxHight;
+
+        public double getMaxLenght() {return maxLenght;}
+        public double getMaxHight() {return  maxHight;}
+
+        abstract void run();
+        abstract void jump();
 }
