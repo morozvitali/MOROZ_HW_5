@@ -1,7 +1,8 @@
 package HW5.Running;
 
 public class Robot extends Member{
-    public Robot () {
+    public Robot (String nameOfMenber) {
+        this.nameOfMember = nameOfMenber;
         this.maxHight = 10;
         this.maxLenght = 10;
     }

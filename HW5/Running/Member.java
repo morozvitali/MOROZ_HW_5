@@ -1,7 +1,8 @@
 package HW5.Running;
 
     abstract class Member{
-// якщо не буде доступа к макс длине то треба зробити геттери (в батьківському класі стоїть протектед!
+
+        public String nameOfMember;
         protected int maxLenght;
         protected int maxHight;
 
