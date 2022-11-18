@@ -9,7 +9,6 @@ public class Track extends Obstacle {
     }
 
     public boolean overcome(Member member) {
-        member.run();
 
         if (member.getMaxLenght() > this.trackLenght) {
 //            System.out.print(this.nameObstacle +  " and I overcome ");

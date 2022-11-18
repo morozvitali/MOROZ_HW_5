@@ -8,17 +8,34 @@ public class Wall extends Obstacle {
         this.wallHight = wallHight;
     }
 
-
     public boolean overcome(Member member) {
-        member.jump();
 
         if (member.getMaxHight() > this.wallHight) {
-//            System.out.print(this.nameOfObstacle +  " and I overcome ");
-//            System.out.println("Jump posibility:[ " + Math.round(member.getMaxHight()) + "m ] Wall hight:[ " + Math.round(wallHight) + "m ]");
+            System.out.printf(
+                    "Учасник "
+                    + member.nameOfMember
+                    + "пройшов перешкоду "
+                    + this.nameOfObstacle
+                    + "на дистанції "
+                    + "[xxx]"); /// сюда прийдет трек
+
             return true;
         } else {
-//            System.out.print(this.nameOfObstacle + " and I lost and I'm out of the competition!");
-//            System.out.println("Jump posibility:[ " + Math.round(member.getMaxHight()) + "m ] Wall hight:[ " + Math.round(wallHight) + "m ]");
+            System.out.println(
+                    "Учасник "
+                    + member.nameOfMember
+                    + " не пройшов перешкоду "
+                    + this.nameOfObstacle
+                    + "на дистанції "
+                    + "[xxx]" /// сюда прийдет трек
+                    + "Пройдено[ЗНАЧЕНИЕ]"); // кількість пройденої дистанції
+
+            // ідея все скинути у Обстейкл, коли будуть зьявлятися перешкоди то
+            // оброблятися буде все там в залежності від того що прийшло на слідуючий
+            // цикл масиву
+
+            // висоти прижків не буде, буде просто дистанція і перешкоди, треба бігти
+
             return false;
         }
     }

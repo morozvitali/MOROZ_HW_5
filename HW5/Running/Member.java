@@ -9,6 +9,4 @@ package HW5.Running;
         public int getMaxLenght() {return maxLenght;}
         public int getMaxHight() {return  maxHight;}
 
-        abstract void run();
-        abstract void jump();
 }
