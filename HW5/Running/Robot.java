@@ -6,4 +6,10 @@ public class Robot extends Member{
         this.maxHight = 10;
         this.maxLenght = 10;
     }
+    public void run () {
+        System.out.println( );
+    }
+    public void jump () {
+    }
+
 }

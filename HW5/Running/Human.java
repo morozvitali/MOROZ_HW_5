@@ -6,4 +6,8 @@ public class Human extends Member {
         this.maxHight = 2;
         this.maxLenght = 8;
     }
+    public void run () {
+    }
+    public void jump () {
+    }
 }

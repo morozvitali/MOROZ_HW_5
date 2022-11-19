@@ -1,7 +1,7 @@
 package HW5.Running;
 
 public abstract class Obstacle {
-    String nameOfObstacle;
+    protected String nameOfObstacle;
     abstract boolean overcome(Member member);
 
 }

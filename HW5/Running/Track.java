@@ -11,12 +11,24 @@ public class Track extends Obstacle {
     public boolean overcome(Member member) {
 
         if (member.getMaxLenght() > this.trackLenght) {
-//            System.out.print(this.nameObstacle +  " and I overcome ");
-//            System.out.println("Run possibility:[ " + Math.round(member.getMaxLenght()) + "km ] Track Distance:[ " + Math.round(obstacleLenght) + "km ]");
+//            System.out.print(  " Учасник "
+//                    + member.nameOfMember
+//                    + " пройшов перешкоду "
+//                    + this.nameOfObstacle
+//                    + " на дистанції"
+//                    + " ['xxx' це буде рахуватись у тестранінг -"
+//                    + "з класу валл не аидно який зараз валл, це назва wall] "); /// сюда прийдет трек
+//);
             return true;
         } else {
-//            System.out.print(this.nameObstacle + " and I lost and I'm out of the competition!");
-//            System.out.println("Jump posibility:[ " + Math.round(member.getMaxLenght()) + "km ] Wall hight:[ " + Math.round(obstacleLenght) + "km ]");
+//            System.out.print(
+//                    "Учасник "
+//                            + member.nameOfMember
+//                            + " не пройшов перешкоду "
+//                            + this.nameOfObstacle
+//                            + " на дистанції"
+//                            + " ['xxx' - це буде рахуватись у тестранінг, це назва wall]"
+//                            + " Пройдено [ це теж у тест раннинг, тут буде рахуватись довжина усіх ] "););
             return false;
        }
     }

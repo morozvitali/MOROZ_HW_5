@@ -6,4 +6,8 @@ public class Cat extends Member {
         this.maxHight = 8;
         this.maxLenght = 4;
     }
+    public void run () {
+    }
+    public void jump () {
+    }
 }
