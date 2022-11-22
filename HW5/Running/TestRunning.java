@@ -2,6 +2,34 @@ package HW5.Running;
 
 public class TestRunning {
 
+//    Стосовно учасників змагань мені сподобався підхід,
+//    коли учасник передається перешкоді яку він проходить.
+//    Але тут я хотів би також бачити, як в методах для бігу і прижку,
+//    як порівнюється висота чи довжина перешкоди і висота яку здатний
+//    перескочити або довжина, яку учасник здатний пробігти.
+//    щось на кшталт:
+//    class RaceTrack extends Obstacle {
+//// ...
+//        public boolean overcome(Member m) {
+//            return m.run(this.distance);
+//        }
+////...
+//    }
+//    class Human extends Member {
+////...
+//        public boolean run(int distance) {
+//            boolean done = this.maxDistance >= distance;
+//            System.out.println(done ? "Учасник подолав відстань" : " Учасник не справився з відстанню");
+//            return done;
+//        }
+//// ...
+//    }
+
+
+
+
+
+
 
     public static void main(String[] args) {
 

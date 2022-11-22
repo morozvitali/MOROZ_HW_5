@@ -1,7 +1,9 @@
 package HW5.Figures;
 
 public class Square implements Area {
-    double size;
+    private double size;
+
+
     public Square (double size) {
         this.size = size;
     }
