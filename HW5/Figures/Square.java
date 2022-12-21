@@ -3,15 +3,20 @@ package HW5.Figures;
 public class Square implements Area {
     private double size;
 
-
-    public Square (double size) {
+    public Square(double size) {
         this.size = size;
+    }
+
+    public void setSize(double size) {
+        this.size = size;
+    }
+
+    public double getSize() {
+        return size;
     }
 
     @Override
     public double area() {
-        double side = size;
-        double area = Math.pow(side, 2);
-        return area;
+        return size * size;
     }
 }

@@ -1,18 +1,22 @@
 package HW5.Figures;
 
 public class Circle implements Area {
-    private double size;
+    private double radius;
 
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
 
+    public double getRadius() {
+        return radius;
+    }
 
-    public Circle(double size) {
-        this.size = size;
+    public Circle(double radius) {
+        this.radius = radius;
     }
 
     @Override
     public double area() {
-        double radius = size;
-        double area = Math.PI * Math.pow(radius, 2);
-        return area;
+        return Math.PI * Math.pow(radius, 2);
     }
 }
