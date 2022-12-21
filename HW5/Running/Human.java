@@ -1,13 +1,13 @@
 package HW5.Running;
 
 public class Human extends Member {
-    public Human (String nameOfMember) {
-        this.nameOfMember = nameOfMember;
-        this.maxHight = 2;
-        this.maxLenght = 8;
+    public Human (String nameOfMember, double jumpHight, double runLenght) {
+        super(nameOfMember, jumpHight, runLenght);
     }
     public void run () {
+        System.out.println("Human " + getNameOfMember() + "run" + getMaxLenght());
     }
     public void jump () {
+        System.out.println("Human " + getNameOfMember () + "jump" + getMaxHight());
     }
 }

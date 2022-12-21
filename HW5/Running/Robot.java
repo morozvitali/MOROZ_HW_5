@@ -1,15 +1,13 @@
 package HW5.Running;
 
-public class Robot extends Member{
-    public Robot (String nameOfMenber) {
-        this.nameOfMember = nameOfMenber;
-        this.maxHight = 10;
-        this.maxLenght = 10;
+public class Robot extends Member {
+    public Robot (String nameOfMember, double jumpHight, double runLenght) {
+        super(nameOfMember, jumpHight, runLenght);
     }
     public void run () {
-        System.out.println( );
+        System.out.println("Robot " + getNameOfMember() + "run" + getMaxLenght());
     }
     public void jump () {
+        System.out.println("Robot " + getNameOfMember () + "jump" + getMaxHight());
     }
-
 }

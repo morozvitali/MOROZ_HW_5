@@ -4,8 +4,9 @@ public class Wall extends Obstacle {
     public int wallHight;
 
     public Wall(String name, int wallHight) {
-        this.nameOfObstacle = name;
-        this.wallHight = wallHight;
+        super (name, wallHight);
+        //this.nameOfObstacle = name;
+        //this.wallHight = wallHight;
     }
 
     public boolean overcome(Member member) {
@@ -13,7 +14,7 @@ public class Wall extends Obstacle {
         if (member.getMaxHight() > this.wallHight) {
             System.out.printf(
                     "Учасник "
-                    + member.nameOfMember
+                    + member.getNameOfMember()
                     + "пройшов перешкоду "
                     + this.nameOfObstacle
                     + "на дистанції "
@@ -23,7 +24,7 @@ public class Wall extends Obstacle {
         } else {
             System.out.println(
                     "Учасник "
-                    + member.nameOfMember
+                    + member.getNameOfMember()
                     + " не пройшов перешкоду "
                     + this.nameOfObstacle
                     + "на дистанції "

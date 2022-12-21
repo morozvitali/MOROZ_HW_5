@@ -2,14 +2,25 @@ package HW5.Running;
 
     abstract class Member{
 
-        protected String nameOfMember;
-        protected int maxLenght;
-        protected int maxHight;
+        private String nameOfMember;
+        private double maxLenght;
+        private double maxHight;
 
+        public Member (String nameOfMember, double maxLenght, double maxHight) {
+            this.nameOfMember = nameOfMember;
+            this.maxHight = maxHight;
+            this.maxLenght = maxLenght;
+        }
 
-        public int getMaxLenght() {return maxLenght;}
-        public int getMaxHight() {return  maxHight;}
+        public double getMaxLenght() {return maxLenght;}
+        public double getMaxHight() {return  maxHight;}
         public String getNameOfMember () {return nameOfMember;}
+
         abstract void run();
         abstract void jump();
-}
+
+        public void setMaxLenght() {this.maxLenght = maxLenght;}
+        public void setMaxHight() {this.maxHight = maxHight;}
+        public void setNameOfMember () {this.nameOfMember = nameOfMember;}
+
+    }
