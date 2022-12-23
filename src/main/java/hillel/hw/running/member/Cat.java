@@ -1,4 +1,4 @@
-package HW5.Running;
+package src.main.java.hillel.hw.running.member;
 
 public class Cat extends Member {
     public Cat(String nameOfMember, double jumpHight, double runLenght) {

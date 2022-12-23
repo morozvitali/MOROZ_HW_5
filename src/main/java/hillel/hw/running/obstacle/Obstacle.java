@@ -1,4 +1,6 @@
-package HW5.Running;
+package src.main.java.hillel.hw.running.obstacle;
+
+import src.main.java.hillel.hw.running.member.Member;
 
 public abstract class Obstacle {
     private String nameOfObstacle;
@@ -9,7 +11,7 @@ public abstract class Obstacle {
         this.obstacleTypeSize = obstacleTypeSize;
     }
 
-    abstract boolean overcome(Member member);
+    public abstract boolean overcome(Member member);
 
     public String getNameOfObstacle() {
         return nameOfObstacle;

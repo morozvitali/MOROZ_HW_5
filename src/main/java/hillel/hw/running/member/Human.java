@@ -1,4 +1,4 @@
-package HW5.Running;
+package src.main.java.hillel.hw.running.member;
 
 public class Human extends Member {
     public Human (String nameOfMember, double jumpHight, double runLenght) {

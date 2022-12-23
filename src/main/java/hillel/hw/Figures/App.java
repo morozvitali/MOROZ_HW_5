@@ -1,4 +1,4 @@
-package HW5.Figures;
+package src.main.java.hillel.hw.Figures;
 
 public class App {
     public static void main(String[] args) {

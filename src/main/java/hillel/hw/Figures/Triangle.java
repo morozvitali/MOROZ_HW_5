@@ -1,4 +1,4 @@
-package HW5.Figures;
+package src.main.java.hillel.hw.Figures;
 
 public class Triangle implements Area {
     private double sizeOne;

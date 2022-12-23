@@ -1,4 +1,6 @@
-package HW5.Running;
+package src.main.java.hillel.hw.running.obstacle;
+
+import src.main.java.hillel.hw.running.member.Member;
 
 public class Track extends Obstacle {
 

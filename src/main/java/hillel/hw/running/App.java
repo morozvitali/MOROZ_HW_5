@@ -1,4 +1,12 @@
-package HW5.Running;
+package src.main.java.hillel.hw.running;
+
+import src.main.java.hillel.hw.running.member.Cat;
+import src.main.java.hillel.hw.running.member.Human;
+import src.main.java.hillel.hw.running.member.Member;
+import src.main.java.hillel.hw.running.member.Robot;
+import src.main.java.hillel.hw.running.obstacle.Obstacle;
+import src.main.java.hillel.hw.running.obstacle.Track;
+import src.main.java.hillel.hw.running.obstacle.Wall;
 
 public class App {
     public static void main(String[] args) {

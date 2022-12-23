@@ -1,6 +1,6 @@
-package HW5.Running;
+package src.main.java.hillel.hw.running.member;
 
-    abstract class Member{
+    public abstract class Member{
 
         private String nameOfMember;
         private double maxLenght;
