@@ -10,7 +10,6 @@ public class App {
         double sum = 0;
         for (Area area : array) {
             sum += area.area();
-            System.out.println(area.area());
         }
         return sum;
     }
